@@ -2,42 +2,14 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import ProductCard from './ProductCard';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
-
-import product1 from '@/assets/product-1.jpg';
-import product2 from '@/assets/product-2.jpg';
-import product3 from '@/assets/product-3.jpg';
-import product4 from '@/assets/product-4.jpg';
+import { Link } from 'react-router-dom';
+import { products } from '@/data/products';
 
 const FeaturedProducts = () => {
   const { t } = useLanguage();
 
-  const products = [
-    {
-      image: product1,
-      brand: 'Ara',
-      name: 'Klassinen avokaskenkä',
-      price: '119,90 €',
-    },
-    {
-      image: product2,
-      brand: 'Tamaris',
-      name: 'Nahkanilkkuri',
-      price: '149,95 €',
-      salePrice: '119,00 €',
-    },
-    {
-      image: product3,
-      brand: 'Hedgren',
-      name: 'Premium nahkalaukku',
-      price: '89,90 €',
-    },
-    {
-      image: product4,
-      brand: 'Caprice',
-      name: 'Punainen ballerina',
-      price: '79,95 €',
-    },
-  ];
+  // Get first 4 products as featured
+  const featuredProducts = products.slice(0, 4);
 
   return (
     <section className="py-16 md:py-24">
@@ -47,24 +19,33 @@ const FeaturedProducts = () => {
           <h2 className="font-display text-3xl md:text-4xl font-semibold text-foreground">
             {t('featured.title')}
           </h2>
-          <Button
-            variant="ghost"
-            className="group text-primary hover:text-primary/80 hover:bg-accent p-0 sm:px-4"
-          >
-            {t('featured.viewAll')}
-            <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-          </Button>
+          <Link to="/category/pumps">
+            <Button
+              variant="ghost"
+              className="group text-primary hover:text-primary/80 hover:bg-accent p-0 sm:px-4"
+            >
+              {t('featured.viewAll')}
+              <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+            </Button>
+          </Link>
         </div>
 
         {/* Products Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {products.map((product, index) => (
+          {featuredProducts.map((product, index) => (
             <div
-              key={index}
+              key={product.id}
               className="animate-fade-in"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              <ProductCard {...product} />
+              <ProductCard
+                product={product}
+                image={product.image}
+                brand={product.brand}
+                name={product.name}
+                price={product.price}
+                salePrice={product.salePrice}
+              />
             </div>
           ))}
         </div>

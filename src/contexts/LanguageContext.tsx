@@ -27,11 +27,21 @@ const translations: Translations = {
   'category.boots': { fi: 'Saappaat ja nilkkurit', en: 'Boots & Ankle Boots' },
   'category.sandals': { fi: 'Sandaalit', en: 'Sandals' },
   'category.bags': { fi: 'Laukut', en: 'Bags' },
+  'category.back': { fi: 'Takaisin', en: 'Back' },
+  'category.sortBy': { fi: 'Järjestä', en: 'Sort by' },
+  'category.sortDefault': { fi: 'Oletus', en: 'Default' },
+  'category.sortPriceAsc': { fi: 'Hinta: halvin ensin', en: 'Price: Low to High' },
+  'category.sortPriceDesc': { fi: 'Hinta: kallein ensin', en: 'Price: High to Low' },
+  'category.sortName': { fi: 'Nimi', en: 'Name' },
+  'category.noProducts': { fi: 'Ei tuotteita tässä kategoriassa.', en: 'No products in this category.' },
   
   // Featured Products
   'featured.title': { fi: 'Suositut tuotteet', en: 'Featured Products' },
   'featured.viewAll': { fi: 'Näytä kaikki', en: 'View All' },
   'product.quickView': { fi: 'Pikanäkymä', en: 'Quick View' },
+  
+  // Quick View
+  'quickView.addToCart': { fi: 'Lisää ostoskoriin', en: 'Add to Cart' },
   
   // About
   'about.title': { fi: 'Tervetuloa Antilopiin', en: 'Welcome to Antilop' },
@@ -43,8 +53,8 @@ const translations: Translations = {
   'footer.address': { fi: 'Osoite', en: 'Address' },
   'footer.contact': { fi: 'Yhteystiedot', en: 'Contact' },
   'footer.hours': { fi: 'Aukioloajat', en: 'Opening Hours' },
-  'footer.weekdays': { fi: 'Ma-Pe 10-17.30', en: 'Mon-Fri 10am-5:30pm' },
-  'footer.saturday': { fi: 'La 10-14.00', en: 'Sat 10am-2pm' },
+  'footer.weekdays': { fi: 'Ma-Pe 10-17.30', en: 'Mon-Fri 10:00-17:30' },
+  'footer.saturday': { fi: 'La 10-14.00', en: 'Sat 10:00-14:00' },
   'footer.rights': { fi: 'Kaikki oikeudet pidätetään.', en: 'All rights reserved.' },
 };
 
