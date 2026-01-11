@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { useLanguage } from '@/contexts/LanguageContext';
 import categoryPumps from '@/assets/category-pumps.jpg';
 import categorySneakers from '@/assets/category-sneakers.jpg';
@@ -26,10 +27,9 @@ const CategoryGrid = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* First three categories in top row */}
           {categories.slice(0, 3).map((category, index) => (
-            <a
+            <Link
               key={category.id}
-              href={`#${category.id}`}
-              id={category.id}
+              to={`/category/${category.id}`}
               className="group relative aspect-square overflow-hidden rounded-lg shadow-elegant product-card-hover"
               style={{ animationDelay: `${index * 100}ms` }}
             >
@@ -44,17 +44,16 @@ const CategoryGrid = () => {
                   {t(category.key)}
                 </h3>
               </div>
-            </a>
+            </Link>
           ))}
         </div>
 
         {/* Bottom row with two larger categories */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-6">
           {categories.slice(3).map((category, index) => (
-            <a
+            <Link
               key={category.id}
-              href={`#${category.id}`}
-              id={category.id}
+              to={`/category/${category.id}`}
               className="group relative aspect-[4/3] overflow-hidden rounded-lg shadow-elegant product-card-hover"
               style={{ animationDelay: `${(index + 3) * 100}ms` }}
             >
@@ -69,7 +68,7 @@ const CategoryGrid = () => {
                   {t(category.key)}
                 </h3>
               </div>
-            </a>
+            </Link>
           ))}
         </div>
       </div>

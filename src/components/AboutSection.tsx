@@ -1,5 +1,6 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import { MapPin, Clock, Phone } from 'lucide-react';
+import GoogleMap from './GoogleMap';
 
 const AboutSection = () => {
   const { t } = useLanguage();
@@ -24,15 +25,25 @@ const AboutSection = () => {
           </p>
         </div>
 
+        {/* Google Map */}
+        <div className="mt-12 max-w-4xl mx-auto">
+          <GoogleMap />
+        </div>
+
         {/* Info Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12 max-w-4xl mx-auto">
           <div className="flex flex-col items-center p-6 bg-background rounded-lg shadow-elegant">
             <MapPin className="h-8 w-8 text-primary mb-4" />
             <h3 className="font-semibold text-foreground mb-2">{t('footer.address')}</h3>
-            <p className="text-sm text-muted-foreground text-center">
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=Porrassalmenkatu+15,+50100+Mikkeli,+Finland"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-muted-foreground text-center hover:text-primary transition-colors"
+            >
               Porrassalmenkatu 15<br />
               50100 Mikkeli
-            </p>
+            </a>
           </div>
 
           <div className="flex flex-col items-center p-6 bg-background rounded-lg shadow-elegant">
@@ -47,10 +58,20 @@ const AboutSection = () => {
           <div className="flex flex-col items-center p-6 bg-background rounded-lg shadow-elegant">
             <Phone className="h-8 w-8 text-primary mb-4" />
             <h3 className="font-semibold text-foreground mb-2">{t('footer.contact')}</h3>
-            <p className="text-sm text-muted-foreground text-center">
-              015-213684<br />
-              antilop@elisanet.fi
-            </p>
+            <div className="text-sm text-muted-foreground text-center">
+              <a
+                href="tel:015213684"
+                className="block hover:text-primary transition-colors"
+              >
+                015-213684
+              </a>
+              <a
+                href="mailto:antilop@elisanet.fi"
+                className="block hover:text-primary transition-colors"
+              >
+                antilop@elisanet.fi
+              </a>
+            </div>
           </div>
         </div>
       </div>

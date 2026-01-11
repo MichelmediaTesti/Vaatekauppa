@@ -1,9 +1,17 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 import heroImage from '@/assets/hero-image.jpg';
 
 const Hero = () => {
   const { t } = useLanguage();
+
+  const scrollToCategories = () => {
+    const categoriesSection = document.querySelector('.bg-cream');
+    if (categoriesSection) {
+      categoriesSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <section className="relative min-h-[70vh] flex items-center">
@@ -30,6 +38,7 @@ const Hero = () => {
             variant="premium"
             size="lg"
             className="btn-elegant px-8 py-6 text-base font-medium"
+            onClick={scrollToCategories}
           >
             {t('hero.cta')}
           </Button>
