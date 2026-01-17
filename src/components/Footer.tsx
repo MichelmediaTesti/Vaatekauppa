@@ -12,7 +12,7 @@ const Footer = () => {
           <div className="md:col-span-1">
             <span className="logo-script text-3xl text-bronze-light">Vaatekauppa</span>
             <p className="mt-4 text-sm text-primary-foreground/70">
-              Naisten palveleva kenkäkauppa Mikkelissä vuodesta 2001.
+              Naisten palveleva kenkäkauppa Mikkelissä vuodesta 2002.
             </p>
           </div>
 
