@@ -27,7 +27,7 @@ const Header = () => {
         <div className="flex h-20 items-center justify-between">
           {/* Logo */}
           <a href="/" className="flex items-center">
-            <span className="logo-script text-3xl text-primary">Antilop</span>
+            <span className="logo-script text-3xl text-primary">Vaatekauppa</span>
           </a>
 
           {/* Desktop Navigation */}

@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           {/* Logo & Description */}
           <div className="md:col-span-1">
-            <span className="logo-script text-3xl text-bronze-light">Antilop</span>
+            <span className="logo-script text-3xl text-bronze-light">Vaatekauppa</span>
             <p className="mt-4 text-sm text-primary-foreground/70">
               Naisten palveleva kenkäkauppa Mikkelissä vuodesta 2001.
             </p>
@@ -24,7 +24,7 @@ const Footer = () => {
             <div className="flex items-start gap-3 text-sm text-primary-foreground/70">
               <MapPin className="h-5 w-5 flex-shrink-0 mt-0.5" />
               <div>
-                <p>Porrassalmenkatu 15</p>
+                <p>Porrassalmenkatu 11</p>
                 <p>50100 Mikkeli</p>
               </div>
             </div>
@@ -44,8 +44,8 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="h-5 w-5 flex-shrink-0" />
-                <a href="mailto:antilop@elisanet.fi" className="hover:text-primary-foreground transition-colors">
-                  antilop@elisanet.fi
+                <a href="mailto:info@vaatekauppa.fi" className="hover:text-primary-foreground transition-colors">
+                  info@vaatekauppa.fi
                 </a>
               </div>
             </div>
@@ -69,7 +69,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-primary-foreground/20 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-primary-foreground/60">
-            © {new Date().getFullYear()} Antilop Oy. {t('footer.rights')}
+            © {new Date().getFullYear()} Vaatekauppa. {t('footer.rights')}
           </p>
           
           {/* Tax Free Badge */}
