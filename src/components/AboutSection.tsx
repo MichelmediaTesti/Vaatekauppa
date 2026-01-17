@@ -36,12 +36,12 @@ const AboutSection = () => {
             <MapPin className="h-8 w-8 text-primary mb-4" />
             <h3 className="font-semibold text-foreground mb-2">{t('footer.address')}</h3>
             <a
-              href="https://www.google.com/maps/search/?api=1&query=Porrassalmenkatu+15,+50100+Mikkeli,+Finland"
+              href="https://www.google.com/maps/search/?api=1&query=Porrassalmenkatu+11,+50100+Mikkeli,+Finland"
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm text-muted-foreground text-center hover:text-primary transition-colors"
             >
-              Porrassalmenkatu 15<br />
+              Porrassalmenkatu 11<br />
               50100 Mikkeli
             </a>
           </div>
@@ -66,10 +66,10 @@ const AboutSection = () => {
                 015-213684
               </a>
               <a
-                href="mailto:antilop@elisanet.fi"
+                href="mailto:info@vaatekauppa.fi"
                 className="block hover:text-primary transition-colors"
               >
-                antilop@elisanet.fi
+                info@vaatekauppa.fi
               </a>
             </div>
           </div>

@@ -25,7 +25,7 @@ const ProductCard = ({ product, image, brand, name, price, salePrice }: ProductC
     image,
     brand,
     name,
-    description: 'Laadukas tuote Antilop-myymälästä.',
+    description: 'Laadukas tuote Vaatekauppa-myymälästä.',
     price,
     salePrice,
     category: 'pumps',
