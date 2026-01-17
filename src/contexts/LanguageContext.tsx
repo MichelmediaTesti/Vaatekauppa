@@ -16,7 +16,7 @@ const translations: Translations = {
   'nav.contact': { fi: 'Yhteystiedot', en: 'Contact' },
   
   // Hero
-  'hero.title': { fi: 'Naisten palveleva kenkäkauppa vuodesta 2001', en: "Women's Full-Service Shoe Shop Since 2001" },
+  'hero.title': { fi: 'Naisten palveleva kenkäkauppa vuodesta 2002', en: "Women's Full-Service Shoe Shop Since 2002" },
   'hero.subtitle': { fi: 'Laadukkaat kengät ja laukut jokaiseen makuun.', en: 'Quality shoes and bags for every taste.' },
   'hero.cta': { fi: 'Tutustu valikoimaan', en: 'Browse Collection' },
   
@@ -45,7 +45,7 @@ const translations: Translations = {
   
   // About
   'about.title': { fi: 'Tervetuloa Vaatekauppaan', en: 'Welcome to Vaatekauppa' },
-  'about.text1': { fi: 'Vaatekauppa on vuonna 2001 perustettu naisten kenkiin erikoistunut myymälä Mikkelin keskustassa.', en: 'Vaatekauppa is a women\'s shoe boutique founded in 2001, located in the heart of Mikkeli.' },
+  'about.text1': { fi: 'Vaatekauppa on vuonna 2002 perustettu naisten kenkiin erikoistunut myymälä Mikkelin keskustassa.', en: 'Vaatekauppa is a women\'s shoe boutique founded in 2002, located in the heart of Mikkeli.' },
   'about.text2': { fi: 'Tuotteemme ovat tarkkaan valittuja ja testattuja yksilöitä, jokaiseen makuun.', en: 'Our products are carefully selected and tested, for every taste.' },
   'about.cta': { fi: 'Tervetuloa ostoksille!', en: 'Welcome to shop with us!' },
   
